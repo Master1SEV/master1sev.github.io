@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Добро пожаловать!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="relax.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script src="nprogress.js"></script>
+<!--Цвет шапки андроида-->
+		<meta name="theme-color" content="#212528">
+<!--Статус бар-->
+<link rel="stylesheet" href="pb.css" />
+</head>
+<body bgcolor="8a9cba">
+
+<video id="video2" loop muted preload="auto" width="100%" height="auto">
+	<source src="video/wind/wind.mp4" type="video/mp4" />
+	<source src="video/wind/wind.webm" type="video/webm" />
+	<source src="video/wind/wind.ogv" type="video/ogv" />
+	Your browser does not support the video tag.
+</video>
+			<script async type="text/javascript">
+				var autoPlayW = $("#video2")[0];
+	               $("#video2").mouseover(function() {
+	                   autoPlayW.play();
+	               });
+			</script>
+			<script type="text/javascript">
+				var autoStopW = $("#video2")[0];
+	               $("#video2").mouseout(function() {
+	                   autoStopW.pause();
+	               });
+			</script>
+<audio id="s3" visibility: hidden controls loop>
+ <source src="audio/wind/wind.ogg" type="audio/ogg" />
+ <source src="audio/wind/wind.acc" type="audio/acc" />
+</audio>
+		<script async type="text/javascript">
+				var autoPlayW2 = $("#s3")[0];
+	               $("#video2").mouseover(function() {
+	                   autoPlayW2.play();
+	               });
+		</script>
+		<script async type="text/javascript">
+					var autoStopW3 = $("#s3")[0];
+	               $("#video2").mouseout(function() {
+	                   autoStopW3.pause();
+	            });
+		</script>
+<script src="pace.min.js"></script>
+ </body>
+</html>

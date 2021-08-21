@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добро пожаловать!</title>
+    <meta charset="utf-8">
+    <!--Статус бар-->
+    <link href="pb.css" rel="stylesheet">
+    <script src="pace.min.js"></script>
+    <script src="nprogress.js"></script>
+    <link href="relax.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <!--Цвет шапки андроида-->
+    <meta content="#212528" name="theme-color">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body bgcolor="3b3c30">
+<video id="fan" loop muted  preload="auto" width="100%" height="auto"  >
+	<source src="video/fan/fan.mp4" type="video/mp4" />
+	<source src="video/fan/fan.ogv" type="video/ogv" />
+	<source src="video/fan/fan.webm" type="video/webm" />
+	Your browser does not support the video tag.
+</video>
+			<script async type="text/javascript">
+				var autoPlayFan = $("#fan")[0];
+	               $("#fan").mouseover(function() {
+	                   autoPlayFan.play();
+	               });
+			</script>
+			<script async type="text/javascript">
+				var autoStopFan = $("#fan")[0];
+	               $("#fan").mouseout(function() {
+	                   autoStopFan.pause();
+	               });
+			</script>
+<audio id="fana" visibility: hidden controls loop>
+ <source src="audio/fan/fan.ogg" type="audio/ogg" />
+ <source src="audio/fan/fan.acc" type="audio/acc" />
+</audio>
+		<script async type="text/javascript">
+				var autoPlayFa = $("#fana")[0];
+	               $("#fan").mouseover(function() {
+	                   autoPlayFa.play();
+	               });
+		</script>
+		<script async type="text/javascript">
+					var autoStopFa = $("#fana")[0];
+	               $("#fan").mouseout(function() {
+	                   autoStopFa.pause();
+	            });
+		</script>
+<script src="pace.min.js"></script>
+		</body>
+</html>

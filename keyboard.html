@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Добро пожаловать!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="relax.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="nprogress.js"></script>
+<!--Цвет шапки андроида-->
+		<meta name="theme-color" content="#212528">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+<!--Статус бар-->
+<link rel="stylesheet" href="pb.css" />
+</head>
+	<body bgcolor="7c4e4a">
+
+	<video id="keyboard" loop controls="controls"muted preload="auto" width="100%" height="auto">
+		<source src="video/keyboard/keyboard.mp4" type="video/mp4" />
+		<source src="video/keyboard/keyboard.webm" type="video/webm" />
+		<source src="video/keyboard/keyboard.ogv" type="video/ogv" />
+		Your browser does not support the video tag.
+	</video>
+				<script async type="text/javascript">
+					var autoPlayCat = $("#keyboard")[0];
+		               $("#keyboard").mouseover(function() {
+		                   autoPlayCat.play();
+		               });
+				</script>
+				<script async type="text/javascript">
+					var autoStopCat = $("#keyboard")[0];
+		               $("#keyboard").mouseout(function() {
+		                   autoStopCat.pause();
+		               });
+				</script>
+	<audio id="keyboarda" visibility: hidden controls loop>
+	 <source src="audio/keyboard/keyboard.ogg" type="audio/ogg" />
+	 <source src="audio/keyboard/keyboard.acc" type="audio/acc" />
+	</audio>
+			<script async type="text/javascript">
+					var autoPlayCatA = $("#keyboarda")[0];
+		               $("#keyboard").mouseover(function() {
+		                   autoPlayCatA.play();
+		               });
+			</script>
+			<script async type="text/javascript">
+						var autoStopCatA = $("#keyboarda")[0];
+		               $("#keyboard").mouseout(function() {
+		                   autoStopCatA.pause();
+		            });
+			</script>
+	<script src="pace.min.js"></script>
+	</body>
+</html>

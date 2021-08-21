@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добро пожаловать!</title>
+    <meta charset="utf-8">
+    <!--Статус бар-->
+    <link href="pb.css" rel="stylesheet">
+    <script src="pace.min.js"></script>
+    <script src="nprogress.js"></script>
+    <link href="relax.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <!--Цвет шапки андроида-->
+    <meta content="#282828" name="theme-color">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+	<body bgcolor="98752e">
+
+	<video id="cat" loop muted preload="auto" width="100%" height="auto">
+		<source src="video/cat/cat.mp4" type="video/mp4" />
+		<source src="video/cat/cat.ogv" type="video/ogv" />
+		<source src="video/cat/cat.webm" type="video/webm" />
+		Your browser does not support the video tag.
+	</video>
+				<script async type="text/javascript">
+					var autoPlayCat = $("#cat")[0];
+		               $("#cat").mouseover(function() {
+		                   autoPlayCat.play();
+		               });
+				</script>
+				<script async type="text/javascript">
+					var autoStopCat = $("#cat")[0];
+		               $("#cat").mouseout(function() {
+		                   autoStopCat.pause();
+		               });
+				</script>
+<audio id="cata" visibility: hidden controls loop>
+	<source src="audio/cat/cat.ogg" type="audio/ogg" />
+	<source src="audio/cat/cat.acc" type="audio/acc" />
+	Your browser does not support the audio tag.
+</audio>
+			<script async type="text/javascript">
+					var autoPlayCatA = $("#cata")[0];
+		               $("#cat").mouseover(function() {
+		                   autoPlayCatA.play();
+		               });
+			</script>
+			<script async type="text/javascript">
+						var autoStopCatA = $("#cata")[0];
+		               $("#cat").mouseout(function() {
+		                   autoStopCatA.pause();
+		            });
+			</script>
+	</body>
+</html>

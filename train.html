@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добро пожаловать!</title>
+    <meta charset="utf-8">
+    <!--Статус бар-->
+    <script src="pace.min.js"></script>
+    <script src="nprogress.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js">
+    </script>
+    <!--Цвет шапки андроида-->
+    <meta content="#282828" name="theme-color">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body bgcolor="8a8870">
+    <video id="train" loop muted width="100%" height="auto" >
+      <source src="video/train/train.mp4" type="video/mp4" />
+      <source src="video/train/train.ogv" type="video/ogv" />
+      <source src="video/train/train.webm" type="video/webm" />
+        Your browser does not support the video tag.
+    </video> 
+            <script async type="text/javascript">
+                var autoPlayTrain = $("#train")[0];
+                   $("#train").mouseover(function() {
+                       autoPlayTrain.play();
+                   });
+            </script>
+            <script async type="text/javascript">
+                var autoStopTrain = $("#train")[0];
+                   $("#train").mouseout(function() {
+                       autoStopTrain.pause();
+                   });
+            </script>
+<audio id="traina" visibility: hidden controls loop>
+    <source src="audio/train/train.ogg" type="audio/ogg" />
+    <source src="audio/train/train.acc" type="audio/acc" />
+      Your browser does not support the audio tag.
+</audio>
+        <script async type="text/javascript">
+                var autoPlayTrainA = $("#traina")[0];
+                   $("#train").mouseover(function() {
+                       autoPlayTrainA.play();
+                   });
+        </script>
+        <script async type="text/javascript">
+                    var autoStopTrainA = $("#traina")[0];
+                   $("#train").mouseout(function() {
+                       autoStopTrainA.pause();
+                });
+        </script>
+  </body>
+</html>

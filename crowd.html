@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добро пожаловать!</title>
+    <meta charset="utf-8">
+    <!--Статус бар-->
+    <link href="pb.css" rel="stylesheet">
+    <script  src="pace.min.js"></script>
+    <script  src="nprogress.js"></script>
+    <link href="relax.css" rel="stylesheet">
+    <script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <!--Цвет шапки андроида-->
+    <meta content="#282828" name="theme-color">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body bgcolor="191615">
+	<video id="crowd" loop muted  width="100%" height="auto">
+		<source src="video/crowd/crowd.mp4" type="video/mp4" />
+		<source src="video/crowd/crowd.ogv" type="video/ogg" />
+		<source src="video/crowd/crowd.webm" type="video/webm" />
+		Your browser does not support the video tag.
+	</video>
+			<script async type="text/javascript">
+				var autoPlayCreek = $("#crowd")[0];
+	               $("#crowd").mouseover(function() {
+	                   autoPlayCreek.play();
+	               });
+			</script>
+			<script async type="text/javascript">
+				var autoStopCreek = $("#crowd")[0];
+	               $("#crowd").mouseout(function() {
+	                   autoStopCreek.pause();
+	               });
+			</script>
+	<audio id="crowda" visibility: hidden controls loop>
+		<source src="audio/crowd/crowd.ogg" type="audio/ogg" />
+		<source src="audio/crowd/crowd.acc" type="audio/acc" />
+	</audio>
+		<script async type="text/javascript">
+				var autoPlayCreekA = $("#crowda")[0];
+	               $("#crowd").mouseover(function() {
+	                   autoPlayCreekA.play();
+	               });
+		</script>
+		<script async type="text/javascript">
+					var autoStopCreekA = $("#crowda")[0];
+	               $("#crowd").mouseout(function() {
+	                   autoStopCreekA.pause();
+	            });
+		</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добро пожаловать!</title>
+    <meta charset="utf-8">
+    <!--Статус бар-->
+    <link href="pb.css" rel="stylesheet">
+    <script src="pace.min.js"></script>
+    <script src="nprogress.js"></script>
+    <link href="relax.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <!--Цвет шапки андроида-->
+    <meta content="#282828" name="theme-color">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+	<body bgcolor="3d3b38">
+
+	<video id="coffee" loop muted preload="auto" width="100%" height="auto">
+		<source src="video/coffee/coffee.mp4" type="video/mp4" />
+		<source src="video/coffee/coffee.ogv" type="video/ogv" />
+		<source src="video/coffee/coffee.webm" type="video/webm" />
+		Your browser does not support the video tag.
+	</video>
+				<script async type="text/javascript">
+					var autoPlayCat = $("#coffee")[0];
+		               $("#coffee").mouseover(function() {
+		                   autoPlayCat.play();
+		               });
+				</script>
+				<script async type="text/javascript">
+					var autoStopCat = $("#coffee")[0];
+		               $("#coffee").mouseout(function() {
+		                   autoStopCat.pause();
+		               });
+				</script>
+<audio id="coffeea" visibility: hidden controls loop> 
+	<source src="audio/coffee/coffee.ogg" type="audio/ogg" />
+	<source src="audio/coffee/coffee.acc" type="audio/acc" />
+</audio>
+			<script async type="text/javascript">
+					var autoPlayCatA = $("#coffeea")[0];
+		               $("#coffee").mouseover(function() {
+		                   autoPlayCatA.play();
+		               });
+			</script>
+			<script async type="text/javascript">
+						var autoStopCatA = $("#coffeea")[0];
+		               $("#coffee").mouseout(function() {
+		                   autoStopCatA.pause();
+		            });
+			</script>
+	</body>
+</html>

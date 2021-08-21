@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Добро пожаловать!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="relax.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script src="nprogress.js"></script>
+<!--Цвет шапки андроида-->
+		<meta name="theme-color" content="#212528">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+<!--Статус бар-->
+<link rel="stylesheet" href="pb.css" />
+</head>
+<body bgcolor="3c464e">
+
+<video id="night" loop muted preload="auto" width="100%" height="auto">
+	<source src="video/night/night.mp4" type="video/mp4" />
+	<source src="video/night/night.ogv" type="video/ogv" />
+	<source src="video/night/night.webm" type="video/webm" />
+
+	Your browser does not support the video tag.
+</video>
+			<script async type="text/javascript">
+				var autoPlayN = $("#night")[0];
+	               $("#night").mouseover(function() {
+	                   autoPlayN.play();
+	               });
+			</script>
+			<script async type="text/javascript">
+				var autoStopN = $("#night")[0];
+	               $("#night").mouseout(function() {
+	                   autoStopN.pause();
+	               });
+			</script>
+<audio id="nighta" visibility: hidden controls loop>
+ <source src="audio/night/night.ogg" type="audio/ogg" />
+ <source src="audio/night/night.acc" type="audio/acc" />
+</audio>
+		<script async type="text/javascript">
+				var autoPlayNa = $("#nighta")[0];
+	               $("#night").mouseover(function() {
+	                   autoPlayNa.play();
+	               });
+		</script>
+		<script async type="text/javascript">
+					var autoStopNa = $("#nighta")[0];
+	               $("#night").mouseout(function() {
+	                   autoStopNa.pause();
+	            });
+		</script>
+<script src="pace.min.js"></script>
+ </body>
+</html>
